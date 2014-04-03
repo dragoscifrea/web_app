@@ -29,10 +29,7 @@ define([
             this.listenTo(this.model, 'sync', this.onLoggedOut, this);
             this.listenTo(this.model, 'error', this.onLoggedOutError, this);
 
-            App.Vent.off('App.UPDATE_LOGIN_STATUS');
             App.Vent.on('App.UPDATE_LOGIN_STATUS', this.updateLoginStatus, this);
-
-            App.Vent.off('App.LOGOUT');
             App.Vent.on('App.LOGOUT', this.onClickLogout, this);
         },
 
@@ -46,7 +43,6 @@ define([
         },
 
         updateLoginStatus: function () {
-
 
         }
 
