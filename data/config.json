@@ -1,0 +1,8 @@
+{
+    "baseURL": "http://some-path.com/",
+    "apiPath": "api/",
+    "dataPath": "data/",
+    "debug": false,
+    "transition": "swipeLeft",
+    "transitionDuration": "0.5"
+}

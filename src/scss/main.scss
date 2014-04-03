@@ -1,0 +1,8 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Base reset
+//@import "managed/normalize"; // Creates bugs when used with custom CSS - other than Bootstrap or Foundation
+
+// Bootstrap
+@import "components/bootstrap/_bootstrap.min.scss";
