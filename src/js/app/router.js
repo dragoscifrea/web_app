@@ -17,8 +17,8 @@ define([
 
         appRoutes: {
             'login' : 'login',
-            ':projectRoom': 'landing',
-            '*default' : 'default'
+            '/': 'landing',
+            '*default' : 'landing'
         }
 
     });

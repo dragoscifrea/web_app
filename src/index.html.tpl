@@ -7,7 +7,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>Soft Citizen</title>
+        <title>Web App Base</title>
         <meta name="description" content="" />
         <meta http-equiv="cache-control" content="no-cache" />
 
@@ -31,14 +31,11 @@
             <header id="header"></header>
 
             <div id="wrapper" class="container">
-                <div id="go-to-top"></div>
-
                 <div id="content-holder"></div>
-
-                <footer id="footer"></footer>
             </div>
         </section>
 
+        <footer id="footer"></footer>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
         <script type="text/javascript">

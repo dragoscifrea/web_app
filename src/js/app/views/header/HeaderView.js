@@ -9,7 +9,7 @@ define([
     var view = Backbone.Marionette.ItemView.extend({
 
         tagName: 'div',
-        className : 'container',
+        className : '',
 
         ui: {
             logo: '.logo',
@@ -47,46 +47,9 @@ define([
 
         updateLoginStatus: function () {
 
-            if (localStorage.isLoggedIn === true || localStorage.isLoggedIn === 'true') {
-                this.ui.logoutButton.removeClass('hide');
-                this.ui.heading.removeClass('hide');
-            } else {
-                this.ui.logoutButton.addClass('hide');
-                this.ui.heading.addClass('hide');
-            }
-        },
 
-
-        onLoggedOut: function () {
-            this.ui.logoutButton.addClass('hide');
-            localStorage.isLoggedIn = false;
-            localStorage.roomName = undefined;
-            delete localStorage.roomName;
-            // App.router.navigate('#login', {trigger:true});
-
-            console.log(window.location);
-
-            if (window.location.host.match('localhost') || window.location.hostname.match('localhost')) {
-                window.open(window.location.origin + window.location.pathname.split('projects')[0] + 'client/#', "_self");
-            } else {
-                window.open(window.location.origin + window.location.pathname.split('projects')[0], "_self");
-            }
-
-        },
-
-        onLoggedOutError: function () {
-            console.log('success logging out');
-        },
-
-        /*** USER EVENTS ***/
-        onClickLogout: function () {
-            this.model.fetch();
-        },
-
-        onClickLogo: function (e) {
-            e.preventDefault();
-            window.open(App.config.attributes.baseURL, "_self");
         }
+
     });
 
     var Model = Backbone.Model.extend({

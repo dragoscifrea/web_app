@@ -42,7 +42,7 @@ define([
         App.layout = new AppLayout();
 
         App.layout.header.show(new HeaderView());
-        App.layout.footer.show(new FooterView());
+        // App.layout.footer.show(new FooterView());
     };
 
     return App;

@@ -15,14 +15,7 @@ define([
 
         // The home page
         landing: function(param) {
-
-            if (localStorage.isLoggedIn === true || localStorage.isLoggedIn === 'true') {
-                this._showPage(new LandingView());
-            } else {
-                this._showPage(new LoginView());
-                // App.router.navigate('#login', {trigger:false});
-            }
-
+            this._showPage(new LandingView());
         },
 
         // The login page.
